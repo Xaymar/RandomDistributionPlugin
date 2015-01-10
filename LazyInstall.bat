@@ -1,6 +1,0 @@
-@ECHO OFF
-SET "RUNDIR=%~dp0"
-SET "TARGETDIR=%~dp1"
-
-IF "%TARGETDIR:Plugins=%" == "%TARGETDIR%" SET "TARGETDIR=%TARGETDIR%Plugins\"
-MKLINK /J "%TARGETDIR%RandomDistribution" "%RUNDIR%"

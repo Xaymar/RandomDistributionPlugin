@@ -1,9 +1,9 @@
-RandomDistribution (Unreal Engine 4 Plugin)
+Random.Distribution (Unreal Engine 4 Plugin)
 =======================
 
-RandomDistribution allows you to quickly create randomly distributed points in 2D or 3D space. Contains classes and blueprint nodes to use.
+Random.Distribution allows you to quickly create randomly distributed points on a surface or in a box. Contains classes and blueprint nodes to use.
 
-Distributors (random generators)
+Generators
 ----------
 
 * C++11 [uniform_real_distribution](http://www.cplusplus.com/reference/random/uniform_real_distribution/)
@@ -20,5 +20,3 @@ Installation
 2. Rebuild your projects Visual Studio project files.
 3. Rebuild your project from Visual Studio while the editor is closed.
 4. Enable the plugin if it hasn't already enabled itself.
-
-*Alternative:* You can use LazyInstall.bat on Windows, just drag & drop your project folder onto it. Be sure to have a backup in case it fucks up though, no guarantees.
