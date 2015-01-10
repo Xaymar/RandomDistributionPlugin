@@ -1,0 +1,21 @@
+{
+	"FileVersion" : 3,
+	
+	"FriendlyName" : "RandomDistribution",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Michael Fabian 'Xaymar' Dirks, Project Kube",
+	"CreatedByURL" : "http://project-kube.de",
+	"EngineVersion" : "4.2.0",
+	"Description" : "RandomDistribution adds classes and Blueprint nodes to quickly generate distributed points in 1D, 2D or 3D space.",
+	"Category" : "Xaymar",
+	"EnabledByDefault" : false,
+	
+	"Modules" :
+	[
+		{
+			"Name" : "RandomDistribution",
+			"Type" : "Runtime"
+		}
+	]
+}
