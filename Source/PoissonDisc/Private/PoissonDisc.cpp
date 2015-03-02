@@ -1,6 +1,6 @@
 #include "PoissonDiscPrivatePCH.h"
 
-UPoissonDisc::UPoissonDisc(const class FPostConstructInitializeProperties& PCIP)
+UPoissonDisc::UPoissonDisc(const class FObjectInitializer& PCIP)
 	: Super(PCIP) {
 
 }

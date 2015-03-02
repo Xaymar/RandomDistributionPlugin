@@ -1,24 +1,24 @@
-// Copyright 1998-2014 Epic Games, Inc. All Rights Reserved.
+// Copyright 2012 - 2015 Project Kube. All Rights Reserved.
 
 namespace UnrealBuildTool.Rules
 {
-	public class PoissonDisc : ModuleRules
+	public class RandomDistributionPlugin : ModuleRules
 	{
-		public PoissonDisc(TargetInfo Target)
+		public RandomDistributionPlugin(TargetInfo Target)
 		{
 			PublicIncludePaths.AddRange(
 				new string[] {
-                    "PoissonDisc/Public",
+                    "RandomDistributionPlugin/Public",
 					// ... add public include paths required here ...
 				}
-				);
+			);
 
 			PrivateIncludePaths.AddRange(
 				new string[] {
-					"PoissonDisc/Private",
+					"RandomDistributionPlugin/Private",
 					// ... add other private include paths required here ...
 				}
-				);
+			);
 
 			PublicDependencyModuleNames.AddRange(
 				new string[]
@@ -26,24 +26,23 @@ namespace UnrealBuildTool.Rules
 					"Core",
                     "Engine",
                     "CoreUObject",
-                    "InputCore",
 					// ... add other public dependencies that you statically link with here ...
 				}
-				);
+			);
 
 			PrivateDependencyModuleNames.AddRange(
 				new string[]
 				{
 					// ... add private dependencies that you statically link with here ...
 				}
-				);
+			);
 
 			DynamicallyLoadedModuleNames.AddRange(
 				new string[]
 				{
 					// ... add any modules that your module loads dynamically here ...
 				}
-				);
+			);
 		}
 	}
 }

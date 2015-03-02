@@ -1,0 +1,27 @@
+{
+	"FileVersion" : 3,
+	
+	"FriendlyName" : "Random Distribution",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Project Kube",
+	"CreatedByURL" : "http://www.project-kube.de",
+	"EngineVersion" : "4.7.0",
+	"Description" : "Random Distribution adds classes and Blueprint functions to quickly generate points in 1D, 2D or 3D space.",
+	"Category" : "Runtime.Generation",
+	"EnabledByDefault" : true,
+	
+	"Modules" :
+	[
+		{
+			"Name" : "RandomDistributionPlugin",
+			"Type" : "Runtime",
+			"LoadingPhase" : "PreDefault"
+		},
+		{
+			"Name" : "PoissonDisc",
+			"Type" : "Runtime",
+			"LoadingPhase" : "PreDefault"
+		}
+	]
+}
