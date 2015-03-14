@@ -4,7 +4,4 @@
 
 // Unreal Engine 4
 #include "List.h"
-
-// Plugin
-#include "IGenerator.h"
-#include "FPoissonDiscGenerator.h"
+#include "SharedPointer.h"

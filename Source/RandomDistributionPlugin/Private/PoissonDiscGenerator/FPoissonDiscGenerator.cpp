@@ -1,9 +1,14 @@
+#include "RandomDistributionPluginPrivatePCH.h"
 #include "FPoissonDiscGenerator.h"
 
 using namespace RandomDistributionPlugin;
 
-FPoissonDiscGenerator::FPoissonDiscGenerator() {}
-FPoissonDiscGenerator::~FPoissonDiscGenerator() {}
+FPoissonDiscGenerator::FPoissonDiscGenerator() {
+
+}
+FPoissonDiscGenerator::~FPoissonDiscGenerator() {
+
+}
 
 double FPoissonDiscGenerator::GetDistance() {
 	return this->m_Distance;
@@ -45,8 +50,8 @@ void RandomDistributionPlugin::FPoissonDiscGenerator::Deinitialize() {
 		// Free memory.
 		if (m_CellGrid) {
 			for (UINT64 i = 0; i < m_CellTotal; i++) {
-				if (m_CellGrid[i])
-					m_CellGrid[i].Reset()
+				if (m_CellGrid[i].IsValid())
+					m_CellGrid[i].Reset();
 			}
 			delete m_CellGrid;
 			m_CellGrid = NULL;
@@ -63,11 +68,10 @@ void RandomDistributionPlugin::FPoissonDiscGenerator::Deinitialize() {
 	}
 }
 
-TDoubleLinkedList<FVector> RandomDistributionPlugin::FPoissonDiscGenerator::Generate(UINT64 pIterations) {
-
-	throw std::logic_error("The method or operation is not implemented.");
+TSharedPtr<TDoubleLinkedList<TSharedPtr<FVector>>> RandomDistributionPlugin::FPoissonDiscGenerator::Generate(UINT64 pIterations) {
+	return MakeShareable<TDoubleLinkedList<TSharedPtr<FVector>>>(new TDoubleLinkedList<TSharedPtr<FVector>>());
 }
 
-TDoubleLinkedList<FVector> RandomDistributionPlugin::FPoissonDiscGenerator::Retrieve() {
-	throw std::logic_error("The method or operation is not implemented.");
+TSharedPtr<TDoubleLinkedList<TSharedPtr<FVector>>> RandomDistributionPlugin::FPoissonDiscGenerator::Retrieve() {
+	return MakeShareable<TDoubleLinkedList<TSharedPtr<FVector>>>(new TDoubleLinkedList<TSharedPtr<FVector>>());
 }
